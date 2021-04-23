@@ -16,8 +16,8 @@ suite('BeaconsFilePersistence', () => {
     let persistence;
     let fixture;
     setup(() => __awaiter(void 0, void 0, void 0, function* () {
-        persistence = new BeaconsFilePersistence_1.BeaconsFilePersistence('data/beacons.test.json');
-        persistence.configure(new pip_services3_commons_nodex_1.ConfigParams());
+        persistence = new BeaconsFilePersistence_1.BeaconsFilePersistence();
+        persistence.configure(pip_services3_commons_nodex_1.ConfigParams.fromTuples("path", "data/beacons.test.json"));
         fixture = new BeaconsPersistenceFixture_1.BeaconsPersistenceFixture(persistence);
         yield persistence.open(null);
         yield persistence.clear(null);

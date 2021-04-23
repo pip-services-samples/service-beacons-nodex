@@ -14,6 +14,6 @@ __exportStar(require("./data/version1"), exports);
 __exportStar(require("./persistence"), exports);
 __exportStar(require("./logic"), exports);
 __exportStar(require("./services/version1"), exports);
-__exportStar(require("./container"), exports);
+__exportStar(require("./containers"), exports);
 __exportStar(require("./build"), exports);
 //# sourceMappingURL=index.js.map
